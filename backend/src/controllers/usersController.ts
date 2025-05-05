@@ -1,8 +1,8 @@
 import { PrismaClient } from '@prisma/client';
 import { Request, Response } from "express";
-import { hashPassword, comparePassword } from "../../utils/bcrypt";
-import { validateUser } from './userValidator';
-import { generateToken } from '../../utils/jwt';
+import { hashPassword, comparePassword } from "../utils/bcrypt";
+import { validateUser } from '../dtos/userValidator';
+import { generateToken } from '../utils/jwt';
 
 const prisma = new PrismaClient();
 

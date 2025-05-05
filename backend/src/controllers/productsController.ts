@@ -1,4 +1,4 @@
-import { validateProduct } from './productValidator';
+import { validateProduct } from '../dtos/productValidator';
 import { PrismaClient } from "@prisma/client";
 import { Request, Response } from "express";
 
