@@ -19,7 +19,7 @@ const Onboarding = () => {
             >
                 <View className='h-full items-center justify-center px-6 font-rubik'>
                     <Image
-                        source={require("../assets/images/welcome.png")}
+                        source={require("../assets/images/imgs/welcome.png")}
                         resizeMode='contain'
                         className='w-[240px] h-[240px]'
                     />

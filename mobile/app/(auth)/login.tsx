@@ -46,7 +46,6 @@ const Login = () => {
                     />
                     <CustomInput
                         label='Password'
-                        secureTextEntry
                         isPassword
                         onChangeText={(val) => setFormData({ ...formData, password: val })}
                         containerStyles='mt-3'
@@ -61,7 +60,7 @@ const Login = () => {
                 <View className='flex flex-row gap-1 mt-3'>
                     <Text className='text-base'>Don't have an account?</Text>
                     <Link href={'/signup'}>
-                        <Text className='text-cyan-600 text-base'>signup</Text>
+                        <Text className='text-orange-700 text-base'>signup</Text>
                     </Link>
                 </View>
             </View>

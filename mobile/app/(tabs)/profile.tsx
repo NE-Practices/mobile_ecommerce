@@ -9,7 +9,7 @@ export default function Profile() {
     return (
         <SafeAreaView className='bg-white h-full'>
             <View className='px-6'>
-                <Image source={require('@/assets/images/profile.png')}
+                <Image source={require('@/assets/images/imgs/profile.png')}
                     style={{ width: 200, height: 200, alignSelf: 'center', marginTop: 20 }}
                 />
                 <Text className='text-center text-2xl font-semibold mt-5'>{user?.name}</Text>

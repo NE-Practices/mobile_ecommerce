@@ -27,22 +27,30 @@ export default function HomeScreen() {
           </View>
         )}
         renderItem={({ item }) => (
-          <View className="bg-white border border-gray-200 rounded-xl p-4 mb-4 shadow-sm">
-            <Text className="text-lg font-semibold text-gray-800">
-              {item.name}
-            </Text>
-            <Text className="text-sm text-gray-500 mt-1 mb-2">
-              {item.description}
-            </Text>
-            <Text className="text-base font-medium text-cyan-700">
-              ${item.price}
-            </Text>
+          <View className="bg-white border border-gray-100 rounded-2xl p-5 mb-4 shadow-md">
+            <View className="">
+              <View>
+                <Text className="text-xl font-bold text-gray-900">
+                  {item.name}
+                </Text>
+
+                <Text className="text-sm text-gray-500 mt-2 leading-relaxed">
+                  {item.description}
+                </Text>
+              </View>
+
+              <View className="mt-3 bg-orange-50 px-3 py-1 rounded-lg self-start">
+                <Text className="text-base font-semibold text-orange-700">
+                  ${item.price}
+                </Text>
+              </View>
+            </View>
 
             <CustomButton
               title="View"
               handlePress={() => router.push(`/product/${item.id}`)}
-              containerStyles="mt-4 border border-cyan-600"
-              titleStyles="text-base text-cyan-700"
+              containerStyles="mt-4 border border-orange-600 rounded-full"
+              titleStyles="text-base text-orange-700"
               variant="outline"
             />
           </View>
@@ -50,7 +58,7 @@ export default function HomeScreen() {
         ListEmptyComponent={() => (
           <View className="flex-1 justify-center items-center py-32">
             <Image
-              source={require("../../assets/images/no-data.png")}
+              source={require("../../assets/images/imgs/empty.png")}
               className="w-48 h-48 rounded-lg"
               resizeMode="contain"
             />
